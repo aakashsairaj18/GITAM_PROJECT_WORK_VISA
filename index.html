@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Work Visa - Project</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />-->
+
+    <!-- ========================= CSS here ========================= -->
+    <!--    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />-->
+    <!--    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />-->
+    <!--    <link rel="stylesheet" href="assets/css/animate.css" />-->
+    <!--    <link rel="stylesheet" href="assets/css/tiny-slider.css" />-->
+    <!--    <link rel="stylesheet" href="assets/css/glightbox.min.css" />-->
+    <!--    <link rel="stylesheet" href="assets/css/main.css" />-->
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/LineIcons.2.0.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tiny-slider.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/glightbox.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.svg') }}">
+
+
+
+
+</head>
+
+<body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+<!--                                <img src="{{url_for('static', filename='images/logo/white-logo.svg')}}" alt="test"/>-->
+<!--                                <img src="https://i.ibb.co/HTFP3np/white-logo.png" alt="test">-->
+                                <a href="http://127.0.0.1:5000/"><img src="https://i.ibb.co/NFzQwLL/gitam-logo1.jpg" alt="gitam-logo1" border="0" style="width:50px;height:50px;"></a>
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="#home" class="page-scroll active" aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#features" class="page-scroll" aria-label="Toggle navigation">Team</a>
+                                    </li>
+<!--                                    <li class="nav-item">-->
+<!--                                        <a href="javascript:void(0)" aria-label="Toggle navigation">Overview</a>-->
+<!--                                    </li>-->
+                                    <li class="nav-item">
+                                        <a href="#pricing" class="page-scroll" aria-label="Toggle navigation">Features</a>
+                                    </li>
+<!--                                    <li class="nav-item">-->
+<!--                                        <a href="javascript:void(0)" aria-label="Toggle navigation">Team</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="nav-item">-->
+<!--                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Blog</a>-->
+<!--                                        <ul class="sub-menu collapse" id="submenu-1-4">-->
+<!--                                            <li class="nav-item"><a href="javascript:void(0)">Blog Grid Sidebar</a>-->
+<!--                                            </li>-->
+<!--                                            <li class="nav-item"><a href="javascript:void(0)">Blog Single</a></li>-->
+<!--                                            <li class="nav-item"><a href="javascript:void(0)">Blog Single-->
+<!--                                                    Sibebar</a></li>-->
+<!--                                        </ul>-->
+<!--                                    </li>-->
+                                    <li class="nav-item">
+                                        <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=121910310021@gitam.in" aria-label="Toggle navigation" target="_blank" rel="noopener noreferrer">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- navbar collapse -->
+                            <div class="button add-list-button">
+                                <a href="{{url_for('model')}}" class="btn" target="_blank">Predict</a>
+                                <!-- <form method="POST" action="model">
+                                    <input type="submit" value="analysis" />
+                                </form> -->
+                            </div>
+
+                            <!-- <a href="{{url_for('model')}}">model</a>
+
+                            <form method="POST" action="model.html">
+                                <input type="submit" value="analysis" />
+                            </form> -->
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Hero Area -->
+    <section id="home" class="hero-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="hero-content">
+                        <h1 class="wow fadeInLeft" data-wow-delay=".4s">Work Visa Analysis</h1>
+                        <p class="wow fadeInLeft" data-wow-delay=".6s">A powerful tool to analyze chances of getting H1B Visa</p>
+                        <div class="button wow fadeInLeft" data-wow-delay=".8s">
+                            <a href="{{url_for('model')}}" class="btn" target="_blank">Analyze &nbsp <i class="lni lni-arrow-right-circle"></i></a>
+<!--                            <a href="javascript:void(0)" class="btn btn-alt"><i class="lni lni-play-store"></i> Google-->
+<!--                                Play</a>-->
+<!--                            <input type="button" value="New Tab" onclick="<iframe src='https://docs.google.com/document/d/e/2PACX-1vTYlRjpJ1Wx1jVl187XtSU4h47Cz4kxGPXbbeI3ArAco3WtAuWSe9aSyPuSuq1hoXgFjBsiNj7jvm7w/pub?embedded=true'></iframe>">-->
+                            <a href="https://docs.google.com/document/d/e/2PACX-1vTYlRjpJ1Wx1jVl187XtSU4h47Cz4kxGPXbbeI3ArAco3WtAuWSe9aSyPuSuq1hoXgFjBsiNj7jvm7w/pub" target="_blank" class="btn">Paper &nbsp <i class="lni lni-arrow-right-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-12">
+                    <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
+                        <!-- <img src="assets/images/hero/phone.png" alt="#">\ -->
+                        <img src="{{url_for('static', filename='images/hero/art01.png')}}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+    <!-- Start Features Area -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Team</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Alone we can do so little, together we can do so much!</h2>
+<!--                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+                        <!-- <i class="lni lni-cloud-upload"></i> -->
+                        <a href="https://vspgitcse.gitam.edu/faculty/profile/501704" rel="nofollow" target="_blank"><img src="{{url_for('static', filename='images/team/jayashree.jpg')}}" style="width:100px;height:100px;" /></a>
+                        <h3>Jayashree Piri</h3>
+                        <p>Assistant Professor, School of Technology, GITAM</p>
+                        <p>Project Guide</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+                        <a href="https://vspgitcse.gitam.edu/faculty/profile/4118" rel="nofollow" target="_blank"><img src="{{url_for('static', filename='images/team/srinivas.jpg')}}" style="width:100px;height:100px;"/> </a>
+                        <h3>Dr Srinivasa Rao K</h3>
+                        <p>Associate Professor, School of Technology, GITAM</p>
+                        <p>Project Reviewer</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+                        <a href="https://vspgitcse.gitam.edu/faculty/profile/1335" rel="nofollow" target="_blank"><img src="{{url_for('static', filename='images/team/lakshmeswari.jpg')}}" style="width:100px;height:100px;"/></a>
+                        <h3>Dr Lakshmeeswari G</h3>
+                        <p>Associate Professor, School of Technology, GITAM</p>
+                        <p>Project Reviewer</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+                        <img src="{{url_for('static', filename='images/team/saibabu.jpeg')}}" style="width:100px;height:100px;" />
+                        <h3>Sai Babu E</h3>
+                        <h6>Team Member</h6>
+                        <p>CSE Student, School of Technology</p>
+                        <p>121910310042</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+                        <img src="{{url_for('static', filename='images/team/aakash.jpg')}}" style="width:100px;height:100px;" />
+                        <h3>Aakash Sai Raj</h3>
+                        <h6>Team Lead</h6>
+                        <p>CSE Student, School of Technology</p>
+                        <p>121910310021</p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+                        <img src="{{url_for('static', filename='images/team/Sankeerth.jpg')}}" style="width:100px;height:100px;" />
+                        <h3>Sankeerth Reddy</h3>
+                        <h6>Team Member</h6>
+                        <p>CSE Student, School of Technology</p>
+                        <p>121910310033</p>
+                    </div>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features Area -->
+
+    <!-- Start Achievement Area -->
+    <section class="our-achievement section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
+                    <div class="title">
+                        <h2>Our project intends to analyze and predict the likelihood of getting H1B Visa</h2>
+<!--                        <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
+                                <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">7,76,806</span></h3>
+                                <p>applicants</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
+                                <h3 class="counter"><span id="secondo2" class="countup" cup-end="120">97</span>%</h3>
+                                <p>Accuracy</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
+                                <h3 class="counter"><span id="secondo3" class="countup" cup-end="125">Random Forest</span></h3>
+                                <p>Model</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Achievement Area -->
+
+    <!-- Start Pricing Table Area -->
+    <section id="pricing" class="pricing-table section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">features</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Here are some stats</h2>
+<!--                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".2s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title" style="text-align:center">Model Accuracy</h4>
+                            <img src="{{url_for('static', filename='images/hero/Model_Accuracy.png')}}" alt="#" />
+<!--                            <p>All the basics for starting a new business</p>-->
+<!--                            <div class="price">-->
+<!--                                <h2 class="amount">$12<span class="duration">/mo</span></h2>-->
+<!--                            </div>-->
+<!--                            <div class="button">-->
+<!--                                <a href="javascript:void(0)" class="btn">Buy Hobby</a>-->
+<!--                            </div>-->
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+<!--                        <div class="table-content">-->
+<!--                            <h4 class="middle-title">What's Included</h4>-->
+<!--                            &lt;!&ndash; Table List &ndash;&gt;-->
+<!--                            <ul class="table-list">-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>-->
+<!--                            </ul>-->
+<!--                            &lt;!&ndash; End Table List &ndash;&gt;-->
+<!--                        </div>-->
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".4s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title" style="text-align:center">Original Dataset(Imbalanced)</h4>
+                            <a href="https://www.dol.gov/agencies/eta/foreign-labor/performance" target="_blank"> <img src="{{url_for('static', filename='images/hero/chart_01.png')}}" alt="#" /></a>
+<!--                            <p>All the basics for starting a new business</p>-->
+<!--                            <div class="price">-->
+<!--                                <h2 class="amount">$24<span class="duration">/mo</span></h2>-->
+<!--                            </div>-->
+<!--                            <div class="button">-->
+<!--                                <a href="javascript:void(0)" class="btn">Buy Freelancer</a>-->
+<!--                            </div>-->
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+<!--                        <div class="table-content">-->
+<!--                            <h4 class="middle-title">What's Included</h4>-->
+                            <!-- Table List -->
+<!--                            <ul class="table-list">-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>-->
+<!--                            </ul>-->
+                            <!-- End Table List -->
+<!--                        </div>-->
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".6s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title" style="text-align:center">Balanced Dataset</h4>
+                            <img src="{{url_for('static', filename='images/hero/chart_02.png')}}" alt="#" />
+<!--                            <div class="price">-->
+<!--                                <h2 class="amount">$32<span class="duration">/mo</span></h2>-->
+<!--                            </div>-->
+<!--                            <div class="button">-->
+<!--                                <a href="javascript:void(0)" class="btn">Buy Startup</a>-->
+<!--                            </div>-->
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+<!--                        <div class="table-content">-->
+<!--                            <h4 class="middle-title">What's Included</h4>-->
+<!--                            &lt;!&ndash; Table List &ndash;&gt;-->
+<!--                            <ul class="table-list">-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>-->
+<!--                            </ul>-->
+<!--                            &lt;!&ndash; End Table List &ndash;&gt;-->
+<!--                        </div>-->
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".8s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title" style="text-align:center">Balanced Dataset</h4>
+                            <img src="{{url_for('static', filename='images/hero/chart_03.png')}}" alt="#" />
+<!--                            <p>All the basics for starting a new business</p>-->
+<!--                            <div class="price">-->
+<!--                                <h2 class="amount">$48<span class="duration">/mo</span></h2>-->
+<!--                            </div>-->
+<!--                            <div class="button">-->
+<!--                                <a href="javascript:void(0)" class="btn">Buy Enterprise</a>-->
+<!--                            </div>-->
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+<!--                        <div class="table-content">-->
+<!--                            <h4 class="middle-title">What's Included</h4>-->
+<!--                            &lt;!&ndash; Table List &ndash;&gt;-->
+<!--                            <ul class="table-list">-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>-->
+<!--                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>-->
+<!--                            </ul>-->
+<!--                            &lt;!&ndash; End Table List &ndash;&gt;-->
+<!--                        </div>-->
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Pricing Table Area -->
+
+    <!-- Start Call To Action Area -->
+    <section class="section call-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="cta-content">
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Your feedback is important to us!
+                        </h2>
+                        <p class="wow fadeInUp" data-wow-delay=".4s">Please, fill the below form after using our tool.</p>
+                        <div class="button wow fadeInUp" data-wow-delay=".6s">
+                            <a href="https://forms.gle/mE5wosyVjZcJQVYR6" rel="nofollow" target="_blank" class="btn">Feedback</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Call To Action Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Start Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-about">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <!-- <img src="assets/images/logo/white-logo.svg" alt="#"> -->
+<!--                                    <img src="{{url_for('static', filename='images/logo/workvisalogo02.png')}}" alt="#" />-->
+                                    <a href="http://127.0.0.1:5000/"><img src='https://i.postimg.cc/bYmpZfqg/Add-a-heading.png' alt="gitam-logo1" border="0" style="width:200px;height:100px;"></a>
+<!--                                    <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/bYmpZfqg/Add-a-heading.png' border='0' alt='Add-a-heading'/></a>-->
+
+                                </a>
+                            </div>
+                            <p>Making the world a better place through constructing elegant hierarchies.</p>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-pinterest"></i></a></li>
+                            </ul>
+                            <p class="copyright-text">Designed and Developed by <a href="https://gitam.edu/" rel="nofollow" target="_blank">Team Work Visa</a>
+                            </p>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Solutions</h3>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">Marketing</a></li>
+                                        <li><a href="javascript:void(0)">Analytics</a></li>
+                                        <li><a href="javascript:void(0)">Commerce</a></li>
+                                        <li><a href="javascript:void(0)">Insights</a></li>
+                                        <li><a href="javascript:void(0)">Promotion</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Support</h3>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">Pricing</a></li>
+                                        <li><a href="javascript:void(0)">Documentation</a></li>
+                                        <li><a href="javascript:void(0)">Guides</a></li>
+                                        <li><a href="javascript:void(0)">API Status</a></li>
+                                        <li><a href="javascript:void(0)">Live Support</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Company</h3>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">About Us</a></li>
+                                        <li><a href="javascript:void(0)">Our Blog</a></li>
+                                        <li><a href="javascript:void(0)">Jobs</a></li>
+                                        <li><a href="javascript:void(0)">Press</a></li>
+                                        <li><a href="javascript:void(0)">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <!-- Single Widget -->
+                                <div class="single-footer f-link">
+                                    <h3>Legal</h3>
+                                    <ul>
+                                        <li><a href="javascript:void(0)">Terms & Conditions</a></li>
+                                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                        <li><a href="javascript:void(0)">Catering Services</a></li>
+                                        <li><a href="javascript:void(0)">Customer Relations</a></li>
+                                        <li><a href="javascript:void(0)">Innovation</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End Single Widget -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <!--    <script src="assets/js/bootstrap.min.js"></script>-->
+    <!--    <script src="assets/js/wow.min.js"></script>-->
+    <!--    <script src="assets/js/tiny-slider.js"></script>-->
+    <!--    <script src="assets/js/glightbox.min.js"></script>-->
+    <!--    <script src="assets/js/count-up.min.js"></script>-->
+    <!--    <script src="assets/js/main.js"></script>-->
+    <script type="text/javascript">
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+    </script>
+
+
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/tiny-slider.js')}}"></script>
+    <script src="{{url_for('static', filename='js/glightbox.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/count-up.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    <!--    <script src="{{url_for('static', filename='js/')}}"></script>-->
+
+</body>
+
+</html>
